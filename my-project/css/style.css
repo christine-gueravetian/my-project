@@ -1,0 +1,63 @@
+/* Importing Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700;800&display=swap");
+
+
+/* Importing component files */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/profile_cards.css");
+@import url("components/sidebar.css");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+
+ul {
+  list-style: none
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+li {
+  width: 100%;
+}
+
+p {
+
+  text-align: justify;
+}
+
+.content {
+  dipslay: flex;
+  flex-direction: column;
+}

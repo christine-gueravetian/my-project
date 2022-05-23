@@ -1,0 +1,93 @@
+.profile_cards_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.profile_card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  background-color: #e9ecef;
+
+  transition: 0.5s;
+}
+
+
+.profile_card_box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.profile_card_box:hover {
+  transform: translateY(-50px);
+
+}
+
+
+.profile_card_content {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_card:nth-of-type(1) .profile_card_box {
+  background-color: #00b4d8;
+}
+
+.profile_card:nth-of-type(2) .profile_card_box {
+  background-color: #90e0ef;
+}
+
+.profile_card:nth-of-type(3) .profile_card_box {
+  background-color: #caf0f8;
+}
+
+.profile_card_content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+  text-shadow: 10px 10px 5px rgb(0, 0, 0, 0.8)
+}
+
+.profile_card_content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.profile_card_content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
